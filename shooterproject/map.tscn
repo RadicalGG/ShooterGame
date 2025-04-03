@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://miahduqlxkde"]
+
+[ext_resource type="Texture2D" uid="uid://dwqmsrk7fbor3" path="res://HappyFace-Player.png" id="1_c7s6e"]
+[ext_resource type="Script" uid="uid://4jvtduxnk2sn" path="res://player.gd" id="1_wijl4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wijl4"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e0an3"]
+
+[node name="map" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_wijl4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_wijl4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("1_c7s6e")
+
+[node name="Area2D" type="Area2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Area2D"]
+shape = SubResource("RectangleShape2D_e0an3")
