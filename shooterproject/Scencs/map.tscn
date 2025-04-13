@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://miahduqlxkde"]
+[gd_scene load_steps=6 format=3 uid="uid://miahduqlxkde"]
 
 [ext_resource type="Script" uid="uid://bkqeti2ragfwd" path="res://Scripts/player.gd" id="1_i6ut4"]
 [ext_resource type="Texture2D" uid="uid://dwqmsrk7fbor3" path="res://Sprites/HappyFace-Player.png" id="2_n4se0"]
+[ext_resource type="PackedScene" uid="uid://uijs5efolywm" path="res://Scencs/enemy.tscn" id="3_n4se0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wijl4"]
 size = Vector2(16, 16)
@@ -27,5 +28,8 @@ shape = SubResource("RectangleShape2D_e0an3")
 
 [node name="ShootPoint" type="Marker2D" parent="Player"]
 position = Vector2(23, 0)
+
+[node name="Enemy" parent="." instance=ExtResource("3_n4se0")]
+position = Vector2(535, 334)
 
 [connection signal="body_entered" from="Player/Area2D" to="Player" method="_on_area_2d_body_entered"]
