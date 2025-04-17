@@ -41,12 +41,12 @@ func fire():
 	#bullet_instance.apply_impulse(Vector2(),Vector2(bullet_speed,0).rotated(rotation))
 	get_tree().get_root().call_deferred("add_child",bullet_instance)
 
-#unc kill():
-	#et_tree().reload_current_scene()
+func kill():
+	get_tree().reload_current_scene()
 
-#func _on_area_2d_body_entered(body: Node2D) -> void:
-#	if "enemy" in body.name:
-#		kill()
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if "Enemy" in body.name:
+		kill()
 
 func get_input():
 	var input_direction = Input.get_vector("left","right","up", "down" )
