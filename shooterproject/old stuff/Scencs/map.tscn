@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://miahduqlxkde"]
 
-[ext_resource type="Script" uid="uid://bkqeti2ragfwd" path="res://Scripts/player.gd" id="1_i6ut4"]
-[ext_resource type="Texture2D" uid="uid://dwqmsrk7fbor3" path="res://Sprites/HappyFace-Player.png" id="2_n4se0"]
-[ext_resource type="PackedScene" uid="uid://uijs5efolywm" path="res://Scencs/enemy.tscn" id="3_n4se0"]
-[ext_resource type="PackedScene" uid="uid://c0glywre1dove" path="res://Scencs/tilemap.tscn" id="4_rfghl"]
+[ext_resource type="Script" uid="uid://bkqeti2ragfwd" path="res://old stuff/Scripts/player.gd" id="1_i6ut4"]
+[ext_resource type="Texture2D" uid="uid://dwqmsrk7fbor3" path="res://old stuff/Sprites/HappyFace-Player.png" id="2_n4se0"]
+[ext_resource type="PackedScene" uid="uid://uijs5efolywm" path="res://old stuff/Scencs/enemy.tscn" id="3_n4se0"]
+[ext_resource type="PackedScene" uid="uid://c0glywre1dove" path="res://old stuff/Scencs/tilemap.tscn" id="4_rfghl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wijl4"]
 size = Vector2(16, 16)
