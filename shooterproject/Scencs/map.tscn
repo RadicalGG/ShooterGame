@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://miahduqlxkde"]
+[gd_scene load_steps=7 format=3 uid="uid://miahduqlxkde"]
 
 [ext_resource type="Script" uid="uid://bkqeti2ragfwd" path="res://Scripts/player.gd" id="1_i6ut4"]
 [ext_resource type="Texture2D" uid="uid://dwqmsrk7fbor3" path="res://Sprites/HappyFace-Player.png" id="2_n4se0"]
 [ext_resource type="PackedScene" uid="uid://uijs5efolywm" path="res://Scencs/enemy.tscn" id="3_n4se0"]
+[ext_resource type="PackedScene" uid="uid://c0glywre1dove" path="res://Scencs/tilemap.tscn" id="4_rfghl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wijl4"]
 size = Vector2(16, 16)
@@ -35,5 +36,82 @@ rotation_smoothing_enabled = true
 
 [node name="Enemy" parent="." instance=ExtResource("3_n4se0")]
 position = Vector2(535, 334)
+
+[node name="Node2D" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(23, 192)
+scale = Vector2(0.28, 2.96)
+
+[node name="Node2D2" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(533, -10)
+scale = Vector2(8.47289, 0.331247)
+
+[node name="Node2D3" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(127, 401)
+scale = Vector2(3.51539, 0.364804)
+
+[node name="Node2D4" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(341, 532)
+scale = Vector2(0.320817, 2.30359)
+
+[node name="Node2D5" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(494, 650)
+scale = Vector2(3.05322, 0.290759)
+
+[node name="Node2D6" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(822, 733)
+rotation = 0.479275
+scale = Vector2(2.88, 0.279999)
+
+[node name="Node2D7" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(473, 233)
+rotation = -0.798764
+scale = Vector2(1.26894, -0.311779)
+
+[node name="Node2D8" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(1173, 814)
+scale = Vector2(3.24053, 0.361001)
+
+[node name="Node2D9" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(1281, -47)
+scale = Vector2(3.32, 1)
+
+[node name="Node2D10" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(1373, 1478)
+rotation = -1.58275
+scale = Vector2(10.4782, 0.301568)
+
+[node name="Node2D11" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(1684, 195)
+rotation = 0.761985
+scale = Vector2(4.41827, 0.275017)
+
+[node name="Node2D12" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(2143, 396)
+scale = Vector2(4.27999, 0.48)
+
+[node name="Node2D13" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(2424, 1681)
+scale = Vector2(0.411524, 20.6854)
+
+[node name="Node2D14" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(1075, 2153)
+scale = Vector2(4.95382, 0.262172)
+
+[node name="Node2D15" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(1849, 3005)
+scale = Vector2(9.09627, 0.640007)
+
+[node name="Node2D16" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(562, 3019)
+scale = Vector2(11.4639, 0.858164)
+
+[node name="Node2D17" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(750, 2464)
+scale = Vector2(0.736629, 9.55408)
+
+[node name="Node2D18" parent="." instance=ExtResource("4_rfghl")]
+position = Vector2(982, 675)
+rotation = -1.58275
+scale = Vector2(2.40743, 0.309348)
 
 [connection signal="body_entered" from="Player/Area2D" to="Player" method="_on_area_2d_body_entered"]
