@@ -13,4 +13,4 @@ func _on_timer_timeout() -> void:
 		unhappy.global_position.x = randi_range(0, get_viewport_rect().size.x)
 		unhappy.global_position.y = randi_range(0, get_viewport_rect().size.y)
 
-	add_child()
+	add_child(unhappy)  
