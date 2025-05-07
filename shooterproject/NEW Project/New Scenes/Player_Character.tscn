@@ -5,7 +5,7 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_at6an"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="player_character" type="CharacterBody2D"]
 script = ExtResource("1_bkkw0")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]

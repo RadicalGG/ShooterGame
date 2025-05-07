@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://37f50vh7or7n"]
+
+[ext_resource type="Texture2D" uid="uid://dhuljj1d6unum" path="res://NEW Project/New Sprites/EnemyFace.png" id="1_3x3m0"]
+[ext_resource type="Script" uid="uid://dlq7nxxfdalo" path="res://NEW Project/New Scripts/unhappy.gd" id="1_oxqa2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3x3m0"]
+size = Vector2(22, 24)
+
+[node name="unhappy" type="CharacterBody2D"]
+script = ExtResource("1_oxqa2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.4, 1.36)
+texture = ExtResource("1_3x3m0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.992137, 1)
+shape = SubResource("RectangleShape2D_3x3m0")

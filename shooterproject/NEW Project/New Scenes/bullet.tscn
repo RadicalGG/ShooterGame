@@ -7,6 +7,7 @@
 radius = 79.6006
 
 [node name="Bullet" type="Area2D"]
+scale = Vector2(0.2, 0.2)
 script = ExtResource("1_jbge8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -17,3 +18,9 @@ shape = SubResource("CircleShape2D_jbge8")
 position = Vector2(0, 2)
 scale = Vector2(4.79948, 4.52)
 texture = ExtResource("1_eg3fg")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

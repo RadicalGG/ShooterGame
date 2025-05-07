@@ -1,8 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://upoynuyxovc1"]
+[gd_scene load_steps=3 format=3 uid="uid://upoynuyxovc1"]
 
 [ext_resource type="PackedScene" uid="uid://b2ukb45qu80ih" path="res://NEW Project/New Scenes/Player_Character.tscn" id="1_taq87"]
+[ext_resource type="Script" uid="uid://bjk4fwk6f6jpu" path="res://NEW Project/New Scripts/world.gd" id="1_usqjf"]
 
-[node name="Node2D" type="Node2D"]
+[node name="World" type="Node2D"]
+script = ExtResource("1_usqjf")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_taq87")]
+[node name="player_character" parent="." instance=ExtResource("1_taq87")]
 position = Vector2(531, 300)
+scale = Vector2(2, 1.75)
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
