@@ -13,7 +13,7 @@ How it works: The game runs on scripts that i wrote with some aid from tutorials
 
 What i learned: I learned how to utalise global scripts to make conecting all the scripts inside the proeject together much easier and easier to manage.
 
-Most Proud of: I am most proud of my bullet system and how it spawns the enemies changing to a happy animation upon contact with the bullet.
+Most Proud of: I am most proud of my bullet system and how it spawns the enemies changing to a happy animation upon contact with the bullet. 
 
 Asset References: All self made
 
