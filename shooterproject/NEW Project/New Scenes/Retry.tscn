@@ -60,5 +60,15 @@ position = Vector2(659, 466)
 scale = Vector2(16.7813, 16.3437)
 texture = ExtResource("2_edwye")
 
+[node name="Label" type="Label" parent="."]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 509.0
+offset_top = 93.0
+offset_right = 639.0
+offset_bottom = 116.0
+scale = Vector2(2.29305, 3.14666)
+text = "YOU GOT ANGRY"
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/retry" to="." method="_on_retry_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
