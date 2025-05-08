@@ -30,6 +30,13 @@ scale = Vector2(2, 1.75)
 
 [node name="Camera2D" type="Camera2D" parent="player_character"]
 
+[node name="Score" type="Label" parent="player_character/Camera2D"]
+offset_left = -5.5
+offset_top = -42.8571
+offset_right = 75.5
+offset_bottom = -3.85714
+script = ExtResource("6_ta2t7")
+
 [node name="AllWalls" type="Node2D" parent="."]
 
 [node name="Wall" parent="AllWalls" instance=ExtResource("4_dh1dh")]
@@ -60,7 +67,7 @@ position = Vector2(73, 202)
 scale = Vector2(0.8, 0.6)
 
 [node name="Wall12" parent="AllWalls" instance=ExtResource("4_dh1dh")]
-position = Vector2(1281, 184)
+position = Vector2(1288, 197)
 scale = Vector2(0.8, 0.6)
 
 [node name="Wall10" parent="AllWalls" instance=ExtResource("4_dh1dh")]
@@ -116,8 +123,3 @@ position = Vector2(1272, -72)
 
 [node name="EnemySpawner5" parent="." instance=ExtResource("3_jlsoc")]
 position = Vector2(602, 1416)
-
-[node name="Score" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-script = ExtResource("6_ta2t7")
