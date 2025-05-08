@@ -7,7 +7,7 @@ Video link: https://youtu.be/F2pXEFhvO5w
 
 Project Description: In this game you are a happy character and your job is to spread your happiness through your joy spreader canon to the unhappies(the red enemy looking characters). As you convert the unhappies into happies you accumalate points that display above the player head, the goal is to convert as many unhappy into happies as possible.
 
-How to play: WASD on the keyboard are for movement, Spacebar and left mouse button are to shoot happiness orbs.
+How to play: WASD on the keyboard are for movement, Spacebar and left mouse button are to shoot happiness orbs, the player will face in the direction of the mouse to make aiming more percise.
 
 How it works: The game runs on scripts that i wrote with some aid from tutorials to help figure out extra detail.
 
