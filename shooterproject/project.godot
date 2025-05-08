@@ -19,6 +19,10 @@ config/icon="res://old stuff/Sprites/icon.svg"
 
 window/stretch/mode="canvas_items"
 
+[global_group]
+
+enemies=""
+
 [input]
 
 up={
@@ -51,4 +55,4 @@ shoot={
 [rendering]
 
 anti_aliasing/quality/msaa_2d=2
-environment/defaults/default_clear_color=Color(0.224231, 0.318784, 0.338821, 1)
+environment/defaults/default_clear_color=Color(0.556977, 4.81307e-07, 0.279612, 1)
