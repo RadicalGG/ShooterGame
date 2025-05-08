@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://babuckta28udf"]
+[gd_scene load_steps=3 format=3 uid="uid://babuckta28udf"]
+
+[ext_resource type="Script" uid="uid://dr5xffjnnvaum" path="res://NEW Project/New Scripts/retry.gd" id="1_ybp2p"]
+[ext_resource type="Texture2D" uid="uid://dhuljj1d6unum" path="res://NEW Project/New Sprites/EnemyFace.png" id="2_edwye"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -7,6 +10,29 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ybp2p")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1254.0
+offset_bottom = 681.0
+color = Color(1, 0.452416, 0.383959, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 394.0
+offset_right = 778.0
+offset_bottom = 619.0
+color = Color(0.560785, 0, 0.12642, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 394.0
+offset_right = 778.0
+offset_bottom = 619.0
+color = Color(0.560785, 0, 0.12642, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -28,3 +54,11 @@ text = "Retry
 layout_mode = 2
 text = "quit
 "
+
+[node name="EnemyFace" type="Sprite2D" parent="."]
+position = Vector2(659, 466)
+scale = Vector2(16.7813, 16.3437)
+texture = ExtResource("2_edwye")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]

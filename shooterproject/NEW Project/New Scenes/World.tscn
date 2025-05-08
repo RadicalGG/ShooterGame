@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://upoynuyxovc1"]
+[gd_scene load_steps=9 format=3 uid="uid://upoynuyxovc1"]
 
 [ext_resource type="PackedScene" uid="uid://b2ukb45qu80ih" path="res://NEW Project/New Scenes/Player_Character.tscn" id="1_taq87"]
 [ext_resource type="Script" uid="uid://bjk4fwk6f6jpu" path="res://NEW Project/New Scripts/world.gd" id="1_usqjf"]
 [ext_resource type="Texture2D" uid="uid://boln6bevxhlx0" path="res://NEW Project/New Sprites/TileSetGodot.png" id="2_jlsoc"]
 [ext_resource type="PackedScene" uid="uid://527vnphgurl3" path="res://NEW Project/New Scenes/Enemy Spawner.tscn" id="3_jlsoc"]
 [ext_resource type="PackedScene" uid="uid://xohwfvfbdi46" path="res://NEW Project/New Scenes/wall.tscn" id="4_dh1dh"]
+[ext_resource type="Script" uid="uid://ds7spkuntpeky" path="res://NEW Project/New Scripts/Score.gd" id="6_ta2t7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dh1dh"]
 texture = ExtResource("2_jlsoc")
@@ -115,3 +116,8 @@ position = Vector2(1272, -72)
 
 [node name="EnemySpawner5" parent="." instance=ExtResource("3_jlsoc")]
 position = Vector2(602, 1416)
+
+[node name="Score" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("6_ta2t7")

@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="ShooterProject"
-run/main_scene="uid://upoynuyxovc1"
+run/main_scene="uid://b4qtgxpt5nrk2"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://old stuff/Sprites/icon.svg"
+
+[autoload]
+
+GlobalScore="*res://NEW Project/New Scripts/globalScore.gd"
 
 [display]
 
@@ -54,5 +58,6 @@ shoot={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 anti_aliasing/quality/msaa_2d=2
-environment/defaults/default_clear_color=Color(0.556977, 4.81307e-07, 0.279612, 1)
+environment/defaults/default_clear_color=Color(0.386859, 0.349962, 0.342072, 1)

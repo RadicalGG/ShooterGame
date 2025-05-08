@@ -25,4 +25,4 @@ func _physics_process(delta: float) -> void:
 	
 		if collision.get_collider().is_in_group("enemies") and not is_reloading:
 			is_reloading = true
-			get_tree().reload_current_scene()
+			get_tree().change_scene_to_file("res://NEW Project/New Scenes/Retry.tscn")
