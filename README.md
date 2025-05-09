@@ -1,5 +1,5 @@
 # ShooterGame
-Gregory Klimek, C24435482, TU984/1 Semester 2
+
 
 Project Name: Spread Joy
 
